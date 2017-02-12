@@ -1,0 +1,61 @@
+Terms
+------------------
+Adjective
+Adverb
+Nouns
+Pronoun
+ProperNoun
+Preposition
+Verb
+NounAdjunct
+Article
+Conjunction
+Interjection
+Particle
+SubordinateConjunction
+ModalVerbs
+
+Participle
+  PresentParticiple
+  PastParticiple
+  OR
+  ActiveParticiple
+  PassiveParticiple
+
+
+Predicate
+Ending
+Determiner
+Suffixoid
+
+Adposition
+  Preposition
+  Postposition
+  Circumposition
+
+
+
+Phrases
+------------------
+AdjectivePhrase
+AdverbPhrase
+Adjunct
+AdverbialPhrase
+DeterminerPhrase
+Sentence
+NounPhrase
+VerbPhrase
+PrepositionalPhrase
+Comparative
+ExceptionalCaseMarking
+
+AdpositionalPhrase
+   PrepositionalPhrase
+   PostpositionalPhrases
+   CircumpositionalPhrases
+
+
+
+Ideas
+------------------
+ConditionalSentence

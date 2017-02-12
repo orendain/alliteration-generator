@@ -1,0 +1,47 @@
+@(activeUrl: String)
+
+<div class="navbar navbar-allitgen navbar-static-top">
+  <div class="container"> <!-- necessary? -->
+
+    <!-- Navigation header -->
+    <div class="navbar-header">
+      <div class="navbar-follow">
+        <a href="https://twitter.com/AllitGen" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @@AllitGen</a>
+      </div>
+
+      <div class="navbar-follow-text hidden-xs hidden-sm">... to see all generated sentences!</div>
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <div class="icon-bar-container">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </div>
+        <span class="navbar-brand">Menu</span>
+      </button>
+    </div>
+
+    <!-- Navigation links -->
+    <nav class="navbar-collapse collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right">@links</ul>
+    </nav>
+
+  </div>
+</div>
+
+@menuLinks = @{Seq[(String, String)](
+  ("Home", routes.Forms.viewGenerate(None).url),
+  ("About", routes.Pages.viewAbout(None).url),
+  ("Add Words", routes.Forms.viewAdd(None).url),
+  ("Contribute", routes.Pages.viewContribute(None).url),
+  ("Contact", routes.Forms.viewContact(None).url)
+)}
+
+@links = {@menuLinks.map { case (title, url) =>
+  <li class="@("active".when(url == activeUrl))">
+    <a href=@url>
+      <span class="link_title">@title</span>
+    </a>
+  </li>
+}}

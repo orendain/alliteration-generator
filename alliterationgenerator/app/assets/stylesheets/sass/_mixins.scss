@@ -1,0 +1,56 @@
+@import "../../../target/web/public/main/lib/bootstrap-sass/stylesheets/bootstrap/mixins";
+
+@mixin button-size-large {
+  font-size: $font-size-extralarge;
+  line-height: 3.5em;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  font-weight: 300;
+}
+
+@mixin input-size-large {
+  height: $input-height-large;
+  padding: $padding-large-vertical $padding-large-horizontal;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
+  font-weight: 300;
+}
+
+@mixin input-size-medium {
+  height: $input-height-large;
+  padding: $padding-large-vertical $padding-large-horizontal;
+  font-size: $font-size-medium;
+  line-height: $line-height-large;
+  font-weight: 400;
+}
+
+@mixin about-icon-size($icon-size, $top-margin: 25px) {
+  .about-block {
+    padding-left: 15px + $icon-size + 15px ;
+
+    .glyphicon {
+      @if ($icon-size > 0) {
+        font-size: $icon-size;
+        top: $top-margin;
+        left: floor($grid-gutter-width/2);
+      }
+      @if ($icon-size == 0) {
+        display: none;
+      }
+    }
+  }
+}
+
+@mixin background-and-hover($parent, $color) {
+  #{$parent} {
+    a {
+      @include background($color);
+
+      &:hover,
+      &:focus {
+        @include background(darken($color, 10%));
+      }
+    }
+  }
+}

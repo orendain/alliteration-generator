@@ -1,0 +1,42 @@
+@(generateForm: Form[Generate])(implicit statusBar: Option[StatusBar], token: play.filters.csrf.CSRF.Token, lang: play.api.i18n.Lang)
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(helpers.bootstrapInputField.f) }
+
+@main(title = "AlliterationGenerator.com, like a goshdang boss", activeUrl = "/") {
+  <div class="row">
+
+    @helper.form(routes.Forms.submitGenerate, 'id -> "generate-form") {
+      @CSRF.formField
+
+      <div class="col-sm-6">
+        <div id="generate-sentence-type" class="form-horizontal">
+          @helpers.bootstrapInputRadioGroup(
+            generateForm("sentenceType"),
+            Seq(("alliterative", "Alliterative"), ("regular", "Regular"))
+          )(helpers.bootstrapRadioInputField, lang)
+        </div>
+
+        <div id="generate-letter" class="form-group">
+          @inputText(
+            generateForm("letter"),
+            '_label -> "Enter a letter (? = random)",
+            '_vertical -> true,
+            'placeholder -> "?",
+            'maxlength -> "1")
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="generate-submit" class="btn btn-big btn-submit">Generate!</button>
+          <div id="generate-version">Generator version: @play.Play.application.configuration.getString("application.version")</div>
+        </div>
+      </div>
+
+      <div id="generate-sentences" class="form-group col-sm-6">
+        <label for="generate-sentences">Generated Sentences</label>
+        <textarea class="form-control" name="generate-sentences" readonly placeholder="Press 'Generate!'"></textarea>
+      </div>
+    }
+  </div>
+}

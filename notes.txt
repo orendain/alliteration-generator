@@ -1,0 +1,546 @@
+Using phrase structure grammar, and not dependency grammar
+In X-bar theoretic understanding of sentence structure is possible in a constituency-based grammar only; it is not possible in a dependency-based grammar.
+Using constituency-based trees
+
+Could add conditional sentences with:
+http://en.wikipedia.org/wiki/Subjunctive_mood#English
+http://en.wikipedia.org/wiki/Uses_of_English_verb_forms
+http://en.wikipedia.org/wiki/Perfect_%28grammar%29#English
+
+
+Quantifiers:
+  "an amount of" + massNoun
+
+  "every"
+  count nouns (e.g., a number of, every).
+
+  Others can be used with both types (e.g., a lot of, some).
+
+The pronouns have irregular plurals, as in "I" versus "we"
+
+VP = Verb VerbPhrase // (has given finished greeting dancing) ??????????
+
+
+AdverbPhrase =
+  "in a civilized way" (answers how)
+  "near the wall" (answers where)
+  "in a short time" (answers when)
+  "because he vomited" (answers why)
+
+
+/* http://www.chompchomp.com/terms/participle.htm */
+/* Participles can be used as adjectives - http://www.grammar-monster.com/glossary/past_participles.htm */
+Forms of verbs:
+
+SimplePresentSingular   (dance, swim, drive)
+SimplePresentPlural (dances, swims, drives)
+SimplePast (danced, swam, drove)
+PastParticiple (danced, swum, driven)
+PresentParticiple (dancing, swimming, driving)
+
+"The rock is laughing" (laughing is used as an adjective, which makes "is laughing" an adjective phrase? or maybe its a self-proclaimed ActionPhrase [is laughing, went riding, had been sleeping, could have been dead])
+
+BeingVerbs (http://www.momswhothink.com/reading/list-of-verbs.html)
+
+Auxiliary verbs:
+X had bitten into the muffin (had)
+Once X has written his essay, ... (has)
+X might have slept (might have)
+
+
+Connecting Subject to predicate: Copula (be and its forms)
+Aux verb: expresses tense, voice, modality, etc.
+
+Active voice:
+  Fred stabbed him.
+  Mark kicked the ball.
+  John ate the five buildings.
+  Becky kicked her in the leg during soccer practice.
+  A stabbing occured.
+  There was a stabbing.
+
+Passive voice:
+  He was stabbed by fred.
+  the ball was kicked by mark.
+  five buildins must have been eaten by john.
+  she got kicked in the leg during soccer practice.
+
+
+ActivePhrase:
+  <DP> <VerbPhrase> <DP/Location/Etc>
+PassiveVoiceVerb:
+    <form of aux verb be (or get)> + <past participle of verb>
+    she was examined.
+
+
+FiniteVerb: has subject and functions as root of indep. clause:
+  <> = infiniteVerb
+  "Stuff APPEARS in almost all buckets."
+  "The dog WILL <have> to <be> <trained> well."
+  "[John SAID that [he ENJOYED reading.]]"
+
+
+Negating with do-support (add to aux verb. if no aux, add do-support):
+  He will laugh -> He will not laugh
+  She laughs -> She <does not> laugh
+
+
+aux verbs and Modal verbs:
+can, could, may, might, must, shall, should, will and would
+  Certain other verbs are sometimes, but not always, classed as modals; these include
+    ought, had better, dare, need
+
+the man COULD drink water
+the woman WILL slash water
+the dog  SHALL not pass ("not" okay if after finite aux verb)
+
+
+
+
+
+/* From nearly half way down page http://en.wikipedia.org/wiki/Modal_verb */
+  Susan will be drafting the document
+  Susan
+    <modal aux (finite verb)>
+    <aux of progressive aspect (infinitve)>
+    <main verb (progressive participle)>
+
+So modal (will/should/could/might/etc) is diff from other two verbs.
+Those two verbs can be either saved together,
+Or maybe theres a way to determine middle verb based on progressive/participle/active/etc.
+
+
+VerbAspects
+
+Two Main Moods
+  -- [Indicative]
+  -- [Subjunctive]
+  -- [Conditional]??
+
+Three Present Tenses in each mood
+  -- Present continuous/progressive
+  -- Simple present
+  -- Present perfect?
+  -- Emphatic present ("he does run fast" - notice the emphasis on does)
+
+
+Progressive
+  -- [Indicative]
+  -- Present
+  -- Past
+  -- Future
+  --
+  -- Perfect
+  -- Pluperfect
+  -- Future Perfect
+  --
+  --
+  -- [Conditional]
+  -- Present (be)
+  -- Perfect (have)
+
+
+
+
+ConjugatedVerb
+  IndicativePresent
+  IndicativePast
+  IndicativeFuture
+  IndicativePerfect
+  IndicativePluperfect
+  IndicativeFuturePerfect
+
+  ConditionalPresent
+  ConditionalPerfect
+
+  ProgressiveIndicativePresent
+  ProgressiveIndicativePast
+  ProgressiveIndicativeFuture
+  ProgressiveIndicativePerfect
+  ProgressiveIndicativePluperfect
+  ProgressiveIndicativeFuturePerfect
+
+  ProgressiveConditionalPresent
+  ProgressiveConditionalPerfect
+
+
+ConditionalPresent
+  -- <DP/NP> + ConditionalModal + Verb(SimplePresent, no conjunction)
+
+ConditionalPerfect
+  -- <DP/NP> + ConditionalModal + "have" + Verb(PastParticiple)
+
+ConditionalModal
+  -- can
+  -- could
+  -- may
+  -- might
+  -- shall
+  -- should
+  -- will
+  -- would
+  -- must
+
+
+
+
+
+
+Pronouns: I, you, that, me, something, he/she/it, them, who
+
+Pronoun subs in for a noun or nounphrase
+
+PronounType
+  Nominative
+  Oblique
+  PossessiveDeterminer
+  PossessivePronoun
+  Reflexive
+
+DP
+  -- "To " + verb (to live is to suffer, to think is a cool green thing"
+
+
+MassNounPhrase
+  -- "some"
+  -- "some of"
+  -- "an amount of"
+  -- "a lot of"
+  -- "plenty of"
+  -- "a crap load of"
+  -- "a couple of"
+  -- "none of the"
+  -- "a ton of"
+  -- "little/few/much?/many/many a?"
+  -- "very ^^"
+  -- "more/most/fewer/fewest/less/least"
+  -- CountAndMassQuantifier
+
+CountNounPhrase
+  -- "a number of"
+  -- "every"
+  -- (some from massnounphrase)
+  -- "few / very few"
+  -- NumberQuantifier ("one", "two", etc.)
+  -- "a bit of"
+  -- "no"
+  -- "a good/great deal of"
+  -- CountAndMassQuantifier
+
+CountAndMassQuantifier
+  -- "no"
+  -- ...
+
+Article
+  -- "the"
+  -- "a(n)" (singular only)
+  -- "no"
+
+VerbType (can be either transitive or intransitive, btw)
+  -- SimplePresent (singular and present)
+  -- SimplePast
+  -- PastParticiple
+  -- PresentParticiple
+
+NounType
+  -- ProperNameType
+  -- CommonNoun
+
+CommonNoun
+  -- CountNoun
+  -- MassNounType
+
+MassNounType
+  -- MassNoun
+  -- AbstractNoun
+
+GroupOfNouns
+  -- CollectiveNoun + " of " + DeterminerPhrase
+
+ProperNameType
+  -- ProperNoun
+  -- ProperName
+  -- DeterminerProperName ("the Titanic", "the White House")
+
+ProperNoun
+  -- NameType
+  -- Company
+
+NameType
+  -- Honorific + Name
+  -- Name + " the " + Adjective
+  -- Name
+
+Name
+  -- FirstName
+  -- FirstName + LastName
+
+
+The Mexican is great. (single, proper)
+The Mexicans are great. (plural, proper)
+Twelve Mexicans are great. (plural, proper)
+The Beatles are great. (plural, proper)
+Canada is great. (single, proper)
+
+Art is great. (mass, abstract)
+Some art is great. (mass, abstract)
+Coffee is great. (mass, abstract)
+
+
+Y = can start with "The " or "Some "
+Y = can start with quantifier if count noun
+Y Intelligence is great. (mass, abstract)
+Y Bravery is great. (mass, abstract)
+Y Loyalty is great. (mass, abstract)
+Y Eloquence is great. (mass, abstract)
+Y Deceit is great. (mass, abstract)
+Y Dedication is great. (mass, abstract)
+Y Relaxation is great. (mass, abstract)
+Y Curiosity is great. (count, abstract)
+Y Curiosities are great. (count, abstract, plural)
+Y Trust is great. (mass, abstract)
+Y Trusts are great. (count, abstract, plural)
+Y Convenience is great. (mass, abstract)
+Y Conveniences are great. (count, abstract, plural)
+Y Art is great. (mass, abstract)
+
+Notes: Singular abstract nouns don't NEED to start with a determiner,
+unlike singular concrete nouns.
+
+X "Table is awesome"
+Y "Glory is awesome"
+
+X "Green table is awesome"
+Y "Green glory is awesome"
+
+Y "The table is awesome"
+Y "The glory is awesome"
+
+
+
+"The tennis of jumping Mexicans"
+"The tennis of a jumping Friday"
+"The tennis of jumping Beatles"
+"The tennis of jumping The Beatles"
+
+"The tennis of the jumping Pilgrims"
+"The tennis of jumping The Pilgrims"
+
+"Beatles are great"
+"Pilgrims are great"
+
+"The Beatles are great"
+"The Pilgrims are great"
+
+The Beatles is a great album.
+My favorite cool label is The Beatles.
+
+
+Beatles are great.
+the Beatles are great.
+five Beatles are great.
+
+My favorite bands are Beatles.
+My favorite chairs are the Beatles.
+My favorite chair is The Beatles.
+
+My favorite band is The Beatles.
+
+My favorite bands are Fridays.
+
+My favorite chairs are tables.
+My favorite green chairs are sturdy ribbons.
+My favorite blurry television is a dirty mousepad.
+
+I hate Beatles.
+I hate the green Beatles.
+
+I hate Edgar.
+I hate the Edgar.
+
+I hate Charlie the Great.
+I hate the Charlie the Great.
+
+Call Mexico.
+Call Pacific Ocean.
+Call the Pacific Ocean.
+Call a Pacific Ocean.
+Call Pacific Oceans.
+Call the Pacific Oceans.
+Call five Pacific Oceans.
+Call the five Pacific Oceans.
+
+My favorite color is Edgar.
+My favorite color is The Pacific Ocean.
+
+Y Vomit on green Edgar.
+N Vomit on the green Edgar.
+Y Vomit on an Edgar.
+Y Vomit on the Edgars.
+
+Y Help donate France.
+Y Help donate green France.
+Y Help donate a France.
+Y Help donate the Frances.
+
+N Vomit on green The Pacific Ocean.
+N Vomit on the green The Pacific Ocean.
+
+Y Vomit on the green Pacific Ocean.
+Y Vomit on green Pacific Ocean.
+Y? Vomit on a Pacific Ocean.
+Y? Vomit on the Pacific Ocean.
+
+Y Fight Alex The Great.
+Fight the Alex The Great.
+Y Fight an Alex The Great.
+Y Fight a green Alex The Great.
+Y Fight seven Alex The Greats.
+
+Y Listen to The Album.
+Y Listen to Pacific Ocean.
+
+N Listen to loud, obnoxious The Album.
+N Listen to loud, obnoxious Pacific Ocean.
+Y Listen to the loud, obnoxious The Album.
+Y Listen to the loud, obnoxious Pacific Ocean.
+
+
+Hypothesis:
+  -- Add <article> to a <DP> including the singular ProperNoun.
+  -- Do NOT add <article> if not using a <DP>.
+  -- <article> is optional for plural ProperNouns in <DP>s.
+  -- Correction to 3rd hypothesis: "the" is required, see explanation for details.
+  -- Hypothesis addendum: this only holds true for proper nouns (single words).
+  -- Extra correction: DO NOT add <article> to singular DP.
+    -- "Look at the hot and steamy Edgar"
+    -- "Look at hot and steamy Edgar" (makes more sense)
+    -- "Visit the rich and successful Africa" (the makes the propernoun seem like a common noun)
+    -- "Visit rich and successful Africa"
+
+Hypothesis #2:
+  -- Example same as the first hypothesis, only this is for special proper names ("Macarthur Avenue", "Beach Road", "SF City Hall", "Mountain View")
+  -- <article> is NOT added to <DP>
+  -- Also, no possession - cannot say "my Beach Road", "their Beach Road", "the kids' Mountain View"
+  -- Rational is that these nouns are somehow unique or too specific to be used as common nouns.
+  -- Possible that possession may also apply to singular ProperNouns.
+  -- Plurals?
+
+Hypothesis #3:
+  -- Phrases always includes it's article ("the")
+  -- If no <DP>, "the" included.
+  -- If <DP>, "the" included in the <DP> and not in the noun.
+
+
+
+Explanation for 1st hypothesis:
+  "Look at green Edgar" sounds like "Look at Green Edgar"
+  ... it should be "Look at [the green] Edgar"
+  ... "Look at [the grumpy, sleepy] Edgar"
+  ... "Look at [grumpy, sleepy] Edgar" sounds like
+      "Look at Grumpy, Sleepy Edgar"
+  ... "[The Ultimate] Hulk"
+
+  ... "Swimming the green Pacific Ocean" sounds like
+      ... "Swimming The Green Pacific Ocean"
+      ... "Swimming the green The Pacific Ocean"
+  ... "Beating San Jose Earthquakes"
+  ... "Beating the San Jose Earthquakes"
+  ... "Beating the strong San Jose Earthquakes"
+
+  ... "Flew over North Pole"
+  ... "Flew over the North Pole"
+  ... "Flew over [the mighty] North Pole"
+  ... "Look at the North Pole"
+  ... "Lives on the bloody North Pole"
+
+  ... "Lives on Beach Road"
+  ... "Lives on the Beach Road"
+  ... "Lives on [the mighty] Beach Road"
+  ... "Look at Beach Road"
+  ... "Lives on bloody Beach Road"
+
+Explanation for 2nd hypothesis:
+  ... "Look at (the) Edgar"
+  ... "Look at (the) China"
+  ... "Look at (the) Microsoft"
+  ... "Look at (the) Pacific Ocean"
+
+Explanation for 3rd hypothesis:
+  ... "Attack Edgars"
+  ... "Attack the Edgars"
+  ... "Attack green Edgars"
+  ... "Attack the green Edgars"
+  ... "Attack Hulks"
+  ... "Attack the Hulks"
+  ... "Attack ultimate Hulks"
+  ... "Attack the ultimate Hulks"
+
+
+
+
+
+Adjective Forms:
+Comparative (-er and more X)
+Superlative (-est and most X)
+
+
+Verb types and their structures:
+
+VERB at <DP>
+  -- hypothesis: if it can be followed "at", it cannot be used any other way, MUST have <DP>
+  -- can also stand on its own, though, without "at" or anything
+  -- can also be a PHRASE, not just verb (lobbed a brick, violently stared, creatively growled)
+  -- sort of an ergative verb, just with required "at"?
+  -- Hypothesis seems to be incorrect, consider words:
+     "gathers" (gathers the rocks)
+     "mixes" (mixes at the bar)
+     "kicking" (kicking at him)
+     "juggles" (juggles at the bar, juggles five balls)
+  -- Conclusion: hypothesis is incorrect
+  -- Hypothesis #2: This should not be considered a verbphrase as it may apply to any verb.
+  -- "he dances at the chair" may seem silly, but still grammatically correct and sensible if thought about for a bit
+  -- Conclusion #2: Until proved otherwise, going with hypothesis #2
+
+VERB with <DP>
+  -- hypothesis: any verb can be used, as long as their previous requirements are met, if any
+  -- cannot find a verb that requires it be followed by "with"
+  -- Conclusion: hypothesis is correct
+
+VERB with <adjective?>
+  -- Examples: with excitement, with vigor, with suspicion
+  -- Hypothesis: equivalent to "VERB with <DP>"
+
+VERB <DP>
+  -- Some verbs MUST be followed with a DP.
+  -- Examples: brings, tails.
+  -- Correction: an argument could be made that brings/tails can stand on their own.
+  -- Example of verbs that do not make sense with DP.
+     -- winks ("he winks the chair")
+     -- dances ("he dances the chair")
+  -- Small correction:
+     According to dictionary.com: verb (used with object)
+       to cause to dance: He danced her around the ballroom.
+       -- Could then argue: "He danced her <around> anywhere"
+       -- Then: "He danced her <LocativeGrammarCase>" (aka preposition)
+       -- Finally: "He danced her" (no particular location)
+  -- Conclusion: While "he vomits into the ocean" makes immediate sense, "he throws into the ocean" does not, but may still be correct.  Consider someone who throws things into the ocean.  That person throws things, whatever they may be, without elaboration, into the ocean.
+
+Conclusions:
+  -- Hypothesis: any verb can stand on its own, given it has the proper tense/participle.
+  -- If it is going to be appended with "at <DP>" or "with <DP>", or anything else, it first has to be flagged as making sense in that position.
+  -- Thus, subtypes of verbs if their not standing on their own:
+        -- VerbAts (removed as a subtype, see its hypothesis #2)
+        -- VerbDPs
+        -- VerbWiths (not a subtype, since any verb can be used)
+  -- Conclusion after considering subtype conclusions: There are no verb subtypes that depend on phrase structure.  Use any verb, assuming the tense/participle/etc. is correct, with any of the above structuring.
+
+
+From: https://answers.yahoo.com/question/index?qid=20130103193345AAnXf8g
+Depends on context. Normally, the comparative form of an adjective is " -er." If it's awkward to do so, or if the adjective has several syllables, you add "more" in front- "He is more adamant than I am about politics." (Not " ... is adamanter.") Thus the simple answer to your question is "cooler." Other one-syllable adjectives have similar comparatives: hotter, older, shorter, meaner.
+
+I can't explain why "silly" becomes "sillier" but "upright" becomes "more upright." English isn't easy to learn.
+
+If you are using less-than-standard speech, if you're speaking as a sub-standard teen, then you might say, "Those goth clothes are super-cool."
+
+In general, colloquial (hence sub- standard) English has adopted "super" as a superlative- to designate something extraordinarily modified. "Super-cool parents let you drink." "Super-nice teacher lets you turn in hoomework late." (Most parents wouldn't let you drink; most teachers won't accept late work.) This use of "super" is only acceptable in sub-standard usage, never in correct English. ... Take care!

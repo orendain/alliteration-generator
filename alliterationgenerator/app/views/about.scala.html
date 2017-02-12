@@ -1,0 +1,37 @@
+@(implicit statusBar: Option[StatusBar])
+
+@main(title = "About | AlliterationGenerator.com", activeUrl = "/about") {
+  <div class="row">
+    @buildArticle("heart")("About"){
+      <p>The generator was originally developed in 2009, but was rewritten from the ground up, along with the website, in 2014.</p>
+    }
+
+    @buildArticle("cog")("Grammar Power!") {
+      <p>Transitive grammar, full analytic and syntactic trees, arbitrarily elongated verboseness.  Stuff stuff stuff.</p>
+    }
+  </div>
+
+  <div class="row">
+    @buildArticle("upload")("User-built Lexicon") {
+      <p>On top of pulling form all known databases and dictionaries, everyone is able to upload their own custom word, phrase, or personal name.  Upload power!</p>
+    }
+
+    @buildArticle("list")("In The Works") {
+      <p>Here are a list of features planned for the generator.  Feel free to head on over to the contact page and suggest more.</p>
+      <ul>
+        <li>Configurable grammar types</li>
+        <li>Generate syntax tree</li>
+        <li>Define desired sentence length</li>
+        <li>Browse all previously generated sentences (through Twitter)</li>
+      </ul>
+    }
+  </div>
+}
+
+@buildArticle(icon: String)(header: String)(body: Html) = {
+  <article class="about-block col-sm-6">
+    <span class="glyphicon glyphicon-@icon"></span>
+    <header><h2 class="title">@header</h2></header>
+    @body
+  </article>
+}

@@ -1,0 +1,54 @@
+@(addForm: Form[Add], terms: Seq[(String, String)])(implicit statusBar: Option[StatusBar], token: play.filters.csrf.CSRF.Token)
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(helpers.bootstrapInputField.f) }
+
+@main(title = "Add words to the knowledge base | AlliterationGenerator.com", activeUrl = "/add") {
+
+  @helper.form(action = routes.Forms.submitAdd, 'id -> "add-form", 'enctype -> "multipart/form-data") {
+    @CSRF.formField
+
+    <div class="row">
+      <div class="step col-sm-6">
+        <h2>Step <span class="step-number">1</span></h2>
+        <p>Choose the type of words to add.</p>
+      </div>
+
+      <div id="add-term-type" class="col-sm-6">
+        @select(
+          addForm("term"),
+          terms,
+          '_label -> "_none",
+          '_default -> "-- Choose a term --")
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="step col-sm-6">
+        <h2>Step <span class="step-number">2</span></h2>
+        <p>Enter words or select a file for upload.<br>Only one word per line.</p>
+      </div>
+
+      <div class="col-sm-6">
+        @textarea(addForm("text"),
+          '_label -> "_none")
+        <div class="add-separator">- or -</div>
+        <div id="add-file" class="form-group">
+          <input type="file" name="file" class="form-control">
+        </div>
+      </div>
+    </div>
+
+    <div class="last row">
+      <div class="step col-sm-6">
+        <h2>Step <span class="step-number">3</span></h2>
+        <p>Press 'Submit'!</p>
+      </div>
+
+      <div class="col-sm-6">
+        <button type="submit" class="btn btn-big btn-submit">Submit</button>
+      </div>
+    </div>
+  }
+}

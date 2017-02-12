@@ -1,0 +1,16 @@
+@(implicit statusBar: Option[StatusBar])
+
+<div id="status" class="container">
+  @if(!statusBar.isEmpty) {
+    @(statusBar.get.html)
+  }
+
+  @**
+  @{statusBar match {
+    case Some(s) => s.template.render()
+  }}
+
+    @if(!statusBar.isEmpty) {
+      @statusBar.template.render()
+    } **@
+</div>

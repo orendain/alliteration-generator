@@ -1,0 +1,22 @@
+// Sticky footer
+// ----------------------------
+#share-banner {
+  // Change to #footer/#share-banner requires change to #push/#body-wrapper
+  height: 200px;
+}
+
+html, body {
+  // Change to #footer/#share-banner requires change to #push/#body-wrapper
+  height: 100%;
+}
+
+#body-wrapper {
+  // Change to #footer/#share-banner requires change to #push/#body-wrapper
+  min-height: 100%;
+  margin-bottom: -270px;
+}
+
+#push {
+  // Change to #footer/#share-banner requires change to #push/#body-wrapper
+  height: 270px;
+}

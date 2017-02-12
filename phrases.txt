@@ -1,0 +1,17 @@
+DeterminerPhrase =
+  DeterminerPhrase "'s" NounPhrase
+
+MassNounPhrase =
+  PartitiveArticlePhrase MassNoun ("some", "some of this", "some of that", "some of the hat's" + MassNoun)
+
+NounPhrase =
+  NounPhrase's Noun
+
+Noun =
+  CountNoun
+  MassNoun
+  ProperNoun
+
+VerbPhrase =
+  RaisingToObjectVerb NounPhrase "to be" "something"
+

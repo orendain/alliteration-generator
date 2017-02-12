@@ -1,0 +1,162 @@
+// General Navbar
+// ----------------------------
+.navbar {
+  box-shadow: 0 -5px 0 rgba(0,0,0,0.03);
+}
+
+// Navbar Components
+// ----------------------------
+.icon-bar-container {
+  display: inline-block;
+}
+
+
+// Custom Navbar
+// ----------------------------
+.navbar-allitgen {
+  background-color: $navbar-allitgen-bg;
+  border-color: $navbar-allitgen-border;
+
+  .navbar-brand {
+    color: $navbar-allitgen-brand-color;
+    padding: 0;
+    float: none;
+    height: auto;
+    margin-left: 5px;
+    font-weight: 300;
+  }
+
+  .navbar-text {
+    color: $navbar-allitgen-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      @include transition(all 250ms linear 0s);
+      color: $navbar-allitgen-link-color;
+      font-size: $font-size-medium;
+      text-align: center;
+
+      &:hover,
+      &:focus {
+        color: $navbar-allitgen-link-hover-color;
+        background-color: $navbar-allitgen-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-allitgen-link-active-color;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-allitgen-link-disabled-color;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: $navbar-allitgen-toggle-border-color;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    &:hover,
+    &:focus {
+      background-color: $navbar-allitgen-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: $navbar-allitgen-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $navbar-allitgen-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-allitgen-link-active-bg;
+        color: $navbar-allitgen-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: $navbar-allitgen-link-color;
+          &:hover,
+          &:focus {
+            color: $navbar-allitgen-link-hover-color;
+            background-color: $navbar-allitgen-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-allitgen-link-active-color;
+            background-color: $navbar-allitgen-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-allitgen-link-disabled-color;
+            background-color: $navbar-allitgen-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  // ----------------------------
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+  .navbar-link {
+    color: $navbar-allitgen-link-color;
+    &:hover {
+      color: $navbar-allitgen-link-hover-color;
+    }
+  }
+
+}
+
+
+// Twitter Div
+// ----------------------------
+@include animate-wobble;
+.navbar-follow {
+  float: left;
+  padding-top: 10px;
+
+  @include animation-delay(5s);
+  @include animation-name(wobble);
+  @include animation-duration(2s);
+
+  @media (min-width: 0) and (max-width: $screen-xs-min) {
+    display: none;
+  }
+}
+
+.navbar-follow-text {
+  float: left;
+  font-size: $font-size-medium;
+  line-height: $line-height-computed;
+  color: $navbar-default-brand-color;
+  margin-left: 5px;
+  padding: 15px 0 15px 0;
+  height: $navbar-height;
+}

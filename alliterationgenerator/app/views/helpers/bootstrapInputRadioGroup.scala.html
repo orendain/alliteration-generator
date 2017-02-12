@@ -1,0 +1,11 @@
+@(field: play.api.data.Field, options: Seq[(String,String)], args: (Symbol,Any)*)(implicit handler: helper.FieldConstructor, lang: play.api.i18n.Lang)
+
+@import helper.input
+
+@input(field, args.map{ x => if(x._1 == '_label) '_name -> x._2 else x }:_*) { (id, name, value, htmlArgs) =>
+  @options.map { v =>
+    <div class="col-sm-6">
+      <label class="control-label form-control"><input type="radio" id="@(id)_@v._1" name="@name" value="@v._1" @if(v._1 == "alliterative"){checked="checked"} @toHtmlArgs(htmlArgs)/>@v._2</label>
+    </div>
+  }
+}

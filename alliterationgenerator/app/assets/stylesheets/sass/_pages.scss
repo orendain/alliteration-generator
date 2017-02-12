@@ -1,0 +1,187 @@
+// Generator
+// ----------------------------
+#generate-form {
+
+  // To look like h2.title
+  .form-group > label {
+    font-size: floor($font-size-base * 2.15); // ~30px
+    color: $brand-primary;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    margin-top: $padding-small-vertical;
+    margin-bottom: ($line-height-computed / 2);
+    font-weight: 300;
+    padding-top: 0; // To override bootstrap
+
+    display: block;
+    text-align: center;
+  }
+
+  .form-control,
+  .control-label {
+    text-align: center;
+    padding-top: 13px;
+  }
+
+  #generate-sentence-type {
+    input {
+      margin-right: 10px;
+    }
+  }
+
+  #generate-letter {
+    input {
+      text-transform: uppercase;
+    }
+  }
+
+  #generate-sentences {
+    textarea {
+      height: 450px;
+    }
+  }
+
+  // Block spacing
+  .form-group {
+    margin-bottom: 60px
+  }
+}
+
+
+// About
+// ----------------------------
+.about-block {
+  // Block spacing 1
+  @media (min-width: 0) and (max-width: $screen-sm-max) {
+    margin-bottom: 40px;
+  }
+
+  // Block spacing 2
+  @media (min-width: $screen-md-min) {
+    margin-bottom: 60px;
+  }
+
+  .glyphicon {
+    color: $brand-primary;
+    position: absolute;
+  }
+}
+
+@media (min-width: 0) and (max-width: $screen-xs-min - 1px) {
+  @include about-icon-size(0px);
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+  @include about-icon-size(64px, 5px);
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @include about-icon-size(96px, 10px);
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  @include about-icon-size(128px, 10px);
+}
+
+@media (min-width: $screen-lg-min) {
+  @include about-icon-size(128px, 10px);
+}
+
+// Add
+// ----------------------------
+.step {
+  text-align: center;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .step-number {
+    //@include border-radius(50%);
+    display: inline-block;
+    background: $violet;
+    font-size: $font-size-large * 1.5; // ~36px
+    color: #fff;
+    width: 40px;
+  }
+}
+
+#add-form {
+  select {
+    text-align: center;
+  }
+
+  textarea {
+    @include input-size-medium;
+    height: 250px;
+  }
+
+  input {
+    padding: 0;
+  }
+
+  .add-separator {
+    text-align: center;
+    font-size: 36px;
+    margin-top: -20px;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+
+  .row {
+    // Block spacing
+    margin-bottom: 60px;
+
+    @media (min-width: $screen-sm-min) {
+      @include display-flex;
+      @include align-items(center);
+    }
+
+    &.last {
+      margin-bottom: 0;
+    }
+  }
+
+  #add-term-type .form-group,
+  #add-file  {
+    margin-bottom: 0;
+  }
+}
+
+
+// Contribute
+// ----------------------------
+.contribute-block {
+  // Block spacing
+  margin-bottom: 40px;
+
+  &.last {
+    margin-bottom: 0;
+  }
+
+  article {
+    @media (min-width: $screen-sm-min) {
+      @include display-flex;
+      @include align-items(center);
+    }
+  }
+}
+
+
+// Contact
+// ----------------------------
+.contact-block {
+  margin-bottom: 40px;
+}
+
+#contact-form {
+  input,
+  textarea {
+    @include input-size-medium;
+  }
+
+  textarea {
+    height: 250px;
+  }
+}

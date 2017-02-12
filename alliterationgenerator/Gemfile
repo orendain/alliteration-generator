@@ -1,0 +1,1 @@
+gem 'animate', :github => 'ericam/compass-animate'

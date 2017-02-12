@@ -1,0 +1,35 @@
+@(element: helper.FieldElements)
+
+<div class="form-group @if(element.hasErrors){has-error}">
+
+  @if(element.label != "_none") {
+    <label for="@element.id" class="control-label @if(!element.args.contains('_vertical)){col-sm-3}">@element.label</label>
+  }
+
+  @if(element.args.contains('_horizontal)) {
+    <div class="@if(element.label != "_none") {col-sm-9} else {col-sm-12}">
+  }
+
+  @if(isSelectElement(element.input.body)) {
+    @Html(element.input.toString().replaceFirst("(<select)", "$1 class=\"form-control\""))
+  } else {
+    @if(element.input.toString().contains("class=")) {
+      @Html(element.input.toString().replaceFirst("(class=\")", "$1form-control "))
+    } else {
+      @Html(element.input.toString().replaceFirst("(<\\w+ )", "$1class=\"form-control\" "))
+    }
+  }
+
+  @if(element.hasErrors) {
+    <span class="help-block">@element.infos.mkString(", ")</span>
+  }
+
+  @if(element.args.contains('_horizontal)) {
+    </div>
+  }
+
+</div>
+
+@isSelectElement(inputBody: String) = @{
+  ("<select".r findFirstIn inputBody) != None
+}

@@ -1,0 +1,22 @@
+General tenses and their valid verb types
+  Past
+    IndicPast
+    IndicPluperfect
+    CondiPerfect????
+    ProgIndiPast
+    ProgIndiPluperfect
+    ProgCondPerfect???
+  Present
+    IndicPresent
+    IndicFuture
+    IndicPerfect
+    ProgIndiPresent
+    ProgIndiFuture
+    ProgIndiPerfect
+  Future
+    IndicFuture
+    IndicFuturePerfect
+    CondiPresent
+    CondiPerfect
+    ProgIndiFuture
+    ProgIndiFuturePerfect

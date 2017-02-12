@@ -1,0 +1,25 @@
+@(contactForm: Form[Contact])(implicit statusBar: Option[StatusBar], token: play.filters.csrf.CSRF.Token)
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(helpers.bootstrapInputField.f) }
+
+@main(title = "Contact | AlliterationGenerator.com", activeUrl = "/contact") {
+  <div class="row">
+    <div class="contact-block col-sm-6">
+      <h2 class="title">What's Up?</h2>
+      <p>Yo, waz up? Ya heard?  Stuff stuff stuff, and more stuff.  Snail mail is the new black.  What?</p>
+    </div>
+
+    <div class="col-sm-6">
+      @helper.form(routes.Forms.submitContact, 'id -> "contact-form", 'class -> "form-horizontal") {
+        @CSRF.formField
+
+        @helper.inputText(contactForm("email"), '_label -> "Email", '_horizontal -> "true")
+        @helper.textarea(contactForm("body"), '_label -> "Message", '_horizontal -> "true")
+
+        <button type="submit" class="btn btn-big btn-submit">Send</button>
+      }
+    </div>
+  </div>
+}

@@ -1,0 +1,15 @@
+@(element: helper.FieldElements)
+
+<div class="form-group @if(element.hasErrors){has-error}">
+
+  @if(element.label != "_none") {
+    <label for="@element.id" class="control-label col-sm-12">Select the kind of sentence to generate</label>
+  }
+
+  @element.input
+
+  @if(element.hasErrors) {
+    <span class="help-block">@element.infos.mkString(", ")</span>
+  }
+
+</div>

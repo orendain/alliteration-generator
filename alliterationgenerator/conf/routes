@@ -1,0 +1,35 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Generators
+# TODO CONVERT TO POST - GET FOR TESTING
+GET   /generate/regular           @controllers.Generator.getRegular
+GET   /generate/:letter           @controllers.Generator.getAlliterative(letter: String)
+
+# Forms
+#?= None
+GET    /                           controllers.Forms.viewGenerate(status: Option[models.StatusBar])
+GET    /add                        controllers.Forms.viewAdd(status: Option[models.StatusBar])
+GET    /contact                    controllers.Forms.viewContact(status: Option[models.StatusBar])
+POST   /                           controllers.Forms.submitGenerate
+POST   /add                        controllers.Forms.submitAdd
+POST   /contact                    controllers.Forms.submitContact
+
+# Pages
+GET    /about                      controllers.Pages.viewAbout(status: Option[models.StatusBar])
+GET    /contribute                 controllers.Pages.viewContribute(status: Option[models.StatusBar])
+
+# Private
+GET    /admin/aggregate            controllers.Admins.viewAggregate
+
+# Twitter
+#GET    /twitter/authenticate       controllers.Twitter.authenticate
+
+# Javascript routing and semi-private resources, not handled by the Assets controller
+GET    /private/*file              controllers.Routing.get(path="/private", file)
+GET    /assets/javascripts/routes  controllers.Routing.javascriptRoutes
+
+# Map static resources from the /public folder to the /assets URL path
+GET    /assets/*file               controllers.Assets.at(path="/public", file)
+

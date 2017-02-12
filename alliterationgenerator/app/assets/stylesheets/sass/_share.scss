@@ -1,0 +1,58 @@
+$color-facebook: #306199;
+$color-twitter: #26C4F1;
+$color-googleplus: #E93F2E;
+$color-pinterest: #B81621;
+
+#share-banner {
+  @include background(lighten($violet, 0%));
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: #fff;
+
+  .title {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .title-long {
+    @media (min-width: 0) and (max-width: $screen-xs-min) { display: none; }
+  }
+
+  .title-short {
+    @media (min-width: $screen-xs-min) { display: none; }
+  }
+}
+
+.share-buttons {
+  .icon svg {
+    fill: #fff;
+  }
+
+  li {
+    margin-bottom: 5px;
+
+    a {
+      @include transition(all 150ms linear 0s);
+      height: 50px;
+      overflow: hidden;
+      text-align: center;
+
+      /*
+      .text {
+        color: #fff;
+        display: inline-block;
+        font-size: 20px;
+        line-height: 30px;
+        vertical-align: top;
+        margin-left: 15px;
+      }
+      */
+    }
+  }
+
+  @include background-and-hover(".facebook", $color-facebook);
+  @include background-and-hover(".twitter", $color-twitter);
+  @include background-and-hover(".googleplus", $color-googleplus);
+  @include background-and-hover(".pinterest", $color-pinterest);
+}

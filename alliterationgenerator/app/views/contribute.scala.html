@@ -1,0 +1,33 @@
+@(implicit statusBar: Option[StatusBar])
+
+@main(title = "Contribute | AlliterationGenerator.com", activeUrl = "/contribute") {
+  <div class="contribute-block row">
+    <article>
+      <div class="col-sm-6">
+        <header><h2 class="title">Donate</h2></header>
+        <p>One of the best ways to support the project is by donating.  We're grateful for any help paying for server resources.</p>
+      </div>
+
+      <div class="col-sm-6">
+        @** <a href="#" class="btn btn-big btn-submit"> *@
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=hello%40alliterationgenerator%2ecom&lc=US&item_name=AlliterationGenerator.com%20donation%20-%20Thank%20you!&currency_code=USD" target="_blank" class="btn btn-big btn-submit">
+          Donate via PayPal
+        </a>
+      </div>
+    </article>
+  </div>
+
+  <div class="contribute-block last row">
+    <article>
+      <div class="col-sm-6">
+        <header><h2 class="title">Grammarize</h2></header>
+        <p>Are you a linguistics buff?  Looking to work on a project that does stuff a fellow nerd like you would enjoy?  Help formulate new sentence structures, piece together parts of speech, and rule the world!</p>
+      </div>
+      <div class="col-sm-6">
+        <a href="/contact" class="btn btn-big btn-submit">
+          Get in contact
+        </a>
+      </div>
+    </article>
+  </div>
+}

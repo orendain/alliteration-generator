@@ -1,0 +1,133 @@
+// HTML
+// ----------------------------
+* {
+  @include selection(#fff7A8, #444);
+}
+
+
+// Alerts
+.alert {
+  @include border-radius(0);
+  text-align: center;
+  font-size: $font-size-medium;
+}
+
+
+// Content
+// ----------------------------
+#content {
+  margin-top: 40px;
+  margin-bottom: 150px;
+
+  .title {
+    color: $brand-primary;
+    font-weight: 300;
+    margin-top: $padding-small-vertical;
+  }
+
+  p,
+  ul {
+    @include adjust-leading-to(1.5, 24px);
+    font-size: $font-size-large;
+    font-weight: 300;
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+}
+
+
+// Forms
+// ----------------------------
+form {
+  label {
+    font-size: $font-size-large;
+    font-weight: 300;
+  }
+
+  .form-control {
+    @include input-size-large;
+    border-radius: 0;
+  }
+
+  textarea.form-control {
+    resize: vertical;
+  }
+}
+
+
+// Buttons
+// ----------------------------
+.btn-big {
+  @include button-size-large;
+}
+
+.btn-submit {
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+
+
+// Header (not including navbar)
+// ----------------------------
+@include animate-fadeInRightBig;
+@include animate-bounceInDown;
+@include animate-bounceInRight;
+#tagline {
+  height: 150px;
+  background: $brand-primary;
+  text-align: center;
+
+  h1 {
+    @include text-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+    color: #fff;
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    @include animation-name(bounceInRight);
+    @include animation-duration(2s);
+  }
+
+  h2 {
+    color: #ad4844;
+    font-weight: 400;
+
+    @include animation-name(bounceInDown);
+    @include animation-duration(2s);
+  }
+}
+
+
+// Footer
+// ----------------------------
+@include animate-slideInLeft;
+#footer {
+  background: $gray-darker;
+  color: $gray;
+  text-transform: uppercase;
+  padding: 10px 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+
+  .heart {
+    color: $gray-light;
+  }
+
+  div {
+    @include animation-name(slideInLeft);
+    @include animation-duration(2s);
+  }
+
+  a {
+    @include transition(all 250ms linear 0s);
+    color: $gray-light;
+
+    &:hover,
+    &:focus {
+      color: $gray-lighter;
+      text-decoration: none;
+    }
+  }
+}

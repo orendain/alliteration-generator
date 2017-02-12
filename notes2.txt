@@ -1,0 +1,127 @@
+He stole "the pan"
+"some pans"
+"some cookies"
+
+Some determiners can be used with both mass/count nouns:
+"some"
+"a lot (of)"
+"no"
+
+"few"/"many" for count nouns
+"little"/"much" for mass nouns
+
+[possessive -s]
+[the guy with the hat]'s dog
+[the cute girl with feet]'s scarf
+
+
+Terms:
+MassNoun
+{ CountNoun (chair/chairs)
+{ ProperNouns (aka CommonNoun) (regular nouns)
+ProperNames =
+  Usually not preceded by determiners
+
+
+PropNoun = Africa & Peter
+PropName = South Africa & Peter the Great
+
+ProperNames normally cannot have articles/determiners
+
+extra determiners: any/another
+countnoundeterminers:
+"a"
+every
+several
+
+CountryName?
+
+"a cup of" ?
+"beaten by" = VP
+"The <> having been killed by" = VP
+"they elected him a <president><thief><etc>"
+
+
+TimeIdentifier?
+-----------------------------
+Yesterday, I went to school
+At 3'oclock, something
+On Wednesday at 4 in the morning
+
+"almost every"
+"may be a result of"
+"can be embedded in"
+
+"The chicken eaten by the children was contaminated"
+adjectivePhrase somewhere in there ^^
+
+
+ParticipialPhrase?
+
+
+PresentParticiple (aka active, imperfect, progressive)
+sleeping
+sitting
+looking
+having
+speaking
+
+
+PastParticiple (aka passive, perfect)
+(for irregular verbs)
+  Sung
+  Written
+  Put
+  Gone
+Is identical to paste tense form for regular verbs
+  Verb + "-ed"
+
+
+
+RelativeClause:
+  NonRestrictive and Restrictive
+  The woman, who had a thick French accent, was very pretty." (non-restrictive — does not narrow down who is being talked about)
+  The woman who had the thick French accent was very pretty." (restrictive — adds information about who is being referred to)
+
+
+
+Add support for antecededents, anaphoras, coreference
+
+Dangling modifiers
+  or just VP + VP "she (ate the burger) (jumping with joy)"
+  "He hit the rat, the trees were beautiful" [ugh, maybe not]
+  "He hit the rat, swimming in the ocean" [ugh, maybe not]
+
+VP [and] VP
+
+ExceptionalCaseMarking += "feels"
+
+some guy "[with] red hair" was talking excessively
+
+
+Good example of active/passive and present/perfect:
+https://en.wikipedia.org/wiki/Gerund#Formation
+
+Negative Inversion - "john jumped on [no] bed"
+  at no time, sam will relax
+  he fled from no country
+
+Standard SV-clauses (subject-verb) are the norm in English. They are usually declarative (as opposed to exclamative, imperative, or interrogative)
+
+
+
+Light Verb (aka delexical, vector, explicator, thin, semantically weak verb):
+do, give, have, make, take
+
+(^^ these can all be followed by "the" or "a" or quantifiers, but not at/with)
+  (the/a/quantifiers = determiners)
+
+I believe all light verbs can be followed (only) by a determiner
+
+
+Idea:
+Drop in verbs into possible structures and have users vote to see if it makes sense.
+
+Ex: drop in "revises" into this otherwise obviously sensible sentence.
+"Edgar REVISES at the wall."
+Does this sentence make sense to you? Yes/No
